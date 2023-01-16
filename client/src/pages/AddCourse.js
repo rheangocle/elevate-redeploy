@@ -71,7 +71,7 @@ const CourseForm = () => {
     }
 
     try {
-      const { data } = addCourse({
+      const { data } = await addCourse({
         variables: { input },
       });
       // const { token, user } = await response.json();

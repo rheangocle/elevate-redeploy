@@ -31,7 +31,7 @@ function ModuleForm(props) {
     }
 
     try {
-      const { data } = addModuleToCourse({
+      const { data } = await addModuleToCourse({
         variables: { ...module },
       });
     } catch (err) {

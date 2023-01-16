@@ -33,7 +33,7 @@ function ActivityForm(props) {
     }
 
     try {
-      const { data } = addActivityToModule({
+      const { data } = await addActivityToModule({
         variables: { ...activity },
       });
     } catch (err) {

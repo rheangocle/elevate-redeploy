@@ -31,7 +31,7 @@ function LectureForm(props) {
     }
 
     try {
-      const { data } = addLectureToModule({
+      const { data } = await addLectureToModule({
         variables: { ...lecture },
       });
     } catch (err) {
