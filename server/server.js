@@ -2,8 +2,8 @@ const express = require("express");
 const { ApolloServer } = require("apollo-server-express");
 const path = require("path");
 const { authMiddleware } = require("./utils/auth");
-import Keyv from "keyv";
-import { KeyvAdapter } from "@apollo/utils.keyvadapter";
+const Keyv = require("keyv");
+const { KeyvAdapter } = require("@apollo/utils.keyvadapter");
 const { typeDefs, resolvers } = require("./schemas");
 const db = require("./config/connection");
 
